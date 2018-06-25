@@ -6,8 +6,12 @@ import java.util.Scanner;
 public class kostka {
 
 	public static void main(String[] args) {
-
-		kostka();
+		try {
+			kostka();
+		}
+		catch(StringIndexOutOfBoundsException e) {
+			System.out.println("nie poprawny format danych");
+		}
 	}
 
 	static void kostka() {
